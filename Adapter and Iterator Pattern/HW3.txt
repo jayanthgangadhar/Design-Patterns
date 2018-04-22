@@ -1,0 +1,55 @@
+Packages:
+1: BitVectors
+under src/main/java - 
+a) bit_vector_1a
+b) bit_vector_1b
+
+under src/main/tests:
+a)bitVectorTestsA
+b)bitVectorTestsB
+
+c):
+The pattern used here is the Iterator design pattern.
+By using the Iterator interface we can use all the classses that implements the Iterator interface as Iterators.
+In my solution i have implemented the Iterator interface in BitVector class so that it can be used an iterator by implementing the
+functions hasAnotherElement() and nextElement().
+By externalizing the iterator we can implement and control how we can iterate through the set.
+
+
+______________________________________________________________________________________________________________________________
+
+2)
+under src/main/java
+->queue
+under src/main/tests
+->queueTests
+______________________________________________________________________________________________________________________________
+3)
+under src/main/java
+a) ast_3a
+b) set_3b
+
+under src/main/tests:
+a)astTests
+
+3b:
+The pattern used here is the Adapter design pattern.
+In my solution the adaptee used is the BitVector which lets BitVector to interact with NodeSet.
+By using the adapter pattern we can define an interface to makes incompatible classes to work together.
+Another advantage of Adapter pattern is that it allows reusability of existing functionality.
+It provides the interface according to client requirement while using the services of a class with a different interface.
+______________________________________________________________________________________________________________________________
+4)
+under src/main/java
+ast_4
+under src/main/tests
+ast_4
+
+4d:
+The pattern used here is the Visitor design pattern.
+It is used when there is a composite pattern such at the AST node structure. Here we build the structure with different expression 
+and statement nodes and such and the arrangement is unpredictable.
+In such a case visitor would be an effective way for you to validate the tree, or build a complex object according to the items found on the tree.
+
+
+
